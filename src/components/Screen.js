@@ -1,13 +1,13 @@
 import { VStack } from '@chakra-ui/react';
 
-export const Screen = ({ children, isDarkBackground, ...boxProps }) => {
+export const Screen = ({ children, ...boxProps }) => {
   return (
     <VStack
       // backgroundColor={boxProps.backgroundColor}
-      color={isDarkBackground ? 'white' : 'black'}
+      // color={isDarkBackground ? 'white' : 'black'}
       {...boxProps}
     >
-      <VStack maxWidth={'1280px'} minHeight={'100vh'}>
+      <VStack width={'1280px'} minHeight={'100vh'} {...boxProps}>
         {children}
       </VStack>
     </VStack>

@@ -8,8 +8,9 @@ import {
   faStackOverflow,
 } from '@fortawesome/free-brands-svg-icons';
 import { Box, HStack } from '@chakra-ui/react';
-
-const socials = [
+import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
+export const socials = [
   {
     icon: faEnvelope,
     url: 'manuel: manueljuliocasanova@gmail.com',
@@ -33,24 +34,78 @@ const socials = [
 ];
 
 const Header = () => {
+  const HandleClick = (id) => {
+    const e = document.getElementById(id);
+    if (e) {
+      e.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+  // bgGradient={'linear(to-r, green.200, pink.500, black)'}
   return (
-    <Box>
-      <HStack justifyContent="space-between">
+    <Box
+      width={'100%'}
+      height={'50px'}
+      position={'fixed'}
+      top={'0'}
+      backgroundColor={'rgba(0, 0, 0, 0.5)'}
+    >
+      <HStack
+        width={'100%'}
+        height={'100%'}
+        justifyContent="space-around"
+        alignItems={'center'}
+        color={'cyan'}
+      >
         <nav>
-          <HStack>
+          <HStack spacing={5}>
             {socials.map((s, i) => (
               <a key={i} href={s.url} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={s.icon} size="2x" />
+                <FontAwesomeIcon icon={s.icon} size="2x" className="socials" />
               </a>
             ))}
           </HStack>
         </nav>
 
         <nav>
-          <HStack>
-            <a href="">Contact me</a>
+          <HStack spacing={6}>
+            <ScrollLink
+              href=""
+              onClick={() => HandleClick('home')}
+              className="scrollLink"
+            >
+              Home
+            </ScrollLink>
 
-            <a href="">Projects</a>
+            <ScrollLink
+              href=""
+              onClick={() => HandleClick('projects')}
+              className="scrollLink"
+            >
+              Projects
+            </ScrollLink>
+
+            <ScrollLink
+              href=""
+              onClick={() => HandleClick('skills')}
+              className="scrollLink"
+            >
+              Skills
+            </ScrollLink>
+
+            <ScrollLink
+              href=""
+              onClick={() => HandleClick('contact-me')}
+              className="scrollLink"
+            >
+              Contact Me
+            </ScrollLink>
+
+            {/* <a href="#skills" onClick={() => HandleClick('skills')}>Skills</a>
+
+            <a href="#contact-me" onClick={() => HandleClick("contact-me")}>Contact me</a> */}
           </HStack>
         </nav>
       </HStack>

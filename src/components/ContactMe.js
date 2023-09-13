@@ -76,7 +76,7 @@ const ContactMe = () => {
         alignItems="flex-start"
         style={{ paddingTop: '200px' }}
       >
-        <Heading as="h1" id="contactme-section" color={'white'}>
+        <Heading as="h1" id="contact-me" color={'white'}>
           Contact me
         </Heading>
 

@@ -1,5 +1,5 @@
 import { Screen } from './Screen';
-import { Avatar, HStack, Heading, Image, VStack } from '@chakra-ui/react';
+import { HStack, Heading, Image, VStack } from '@chakra-ui/react';
 // import me from '../assets/me.jpg';
 import bgImg from '../assets/bgImg.png';
 import Header from './Header';

@@ -7,11 +7,14 @@ import { HStack, Heading, Image, VStack, Text } from '@chakra-ui/react';
 
 const skills = [
   { skill: 'JavaScript', svg: () => require('../assets/meter1.svg') },
-  { skill: 'Pyhton', svg: () => require('../assets/meter2.svg') },
   { skill: 'React', svg: () => require('../assets/meter3.svg') },
-  { skill: 'JavaScript', svg: () => require('../assets/meter1.svg') },
+  { skill: 'HTML', svg: () => require('../assets/meter1.svg') },
   { skill: 'Pyhton', svg: () => require('../assets/meter2.svg') },
-  { skill: 'React', svg: () => require('../assets/meter3.svg') },
+  { skill: 'Nestjs', svg: () => require('../assets/meter3.svg') },
+  { skill: 'CSS', svg: () => require('../assets/meter1.svg') },
+  { skill: 'Nextjs', svg: () => require('../assets/meter3.svg') },
+  { skill: 'Pyhton', svg: () => require('../assets/meter2.svg') },
+  { skill: 'Golang', svg: () => require('../assets/meter3.svg') },
 ];
 
 const responsive = {

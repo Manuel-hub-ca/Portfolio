@@ -2,12 +2,12 @@ import { Box, Flex } from '@chakra-ui/react';
 
 const Footer = () => {
   return (
-    <Box bgGradient={'linear(to top, black, cyan)'}>
+    <Box bgGradient={'linear(to top, cyan, skyblue)'}>
       <footer>
         <Flex
           margin="0 auto"
           px={12}
-          color={'cyan'}
+          color={'black'}
           justifyContent={'center'}
           alignItems={'center'}
           maxWidth={'1024px'}

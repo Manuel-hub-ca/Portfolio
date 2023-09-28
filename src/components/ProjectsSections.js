@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'Task-Management',
     description:
-      'Developed a robust Nestjs API project witha primary focus on user authentication and login using JWT. The API leverages TypeScript and smoothy manages CRUD operations for tasks , establishing a clear user-task relationship.',
+      'Developed a robust Nestjs API project with a primary focus on user authentication and login using JWT. The API leverages TypeScript and smoothy manages CRUD operations for tasks , establishing a clear user-task relationship.',
     getImageSrc: () => require('../assets/apiTask.jpg'),
     link: 'https://github.com/Manuel-hub-ca/nestjs-task-management',
   },

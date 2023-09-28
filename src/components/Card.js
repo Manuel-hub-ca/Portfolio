@@ -11,8 +11,13 @@ const Card = ({ title, description, imageSrc, link }) => {
       alignItems={'start'}
       paddingBottom={['5px', '10px', '10px', '20px']}
     >
-      <Image src={imageSrc} borderRadius={'8px'} objectFit={'cover'} marginBottom={'-12px'}/>
-      <VStack height={'110px'} marginTop={'1px'}>
+      <Image
+        src={imageSrc}
+        borderRadius={'8px'}
+        objectFit={'cover'}
+        marginBottom={'-12px'}
+      />
+      <VStack marginTop={'1px'}>
         <Heading
           marginTop={'0'}
           marginLeft={mL}
@@ -20,7 +25,7 @@ const Card = ({ title, description, imageSrc, link }) => {
           textAlign={'left'}
           height={['10px', '17px', '20px', '20px']}
           fontSize={['12px', '25px', '30px', '30px']}
-          marginBottom={'6px'}
+          marginBottom={['1px', '3px', '4px', '6px']}
         >
           {title}
         </Heading>
@@ -33,12 +38,12 @@ const Card = ({ title, description, imageSrc, link }) => {
         </Text>
       </VStack>
 
-      <HStack marginLeft={mL} alignItems={'center'}>
+      {/* <HStack marginLeft={mL} alignItems={'center'}>
         <span style={{ color: 'black' }}>GitHub Repo</span>
         <a href={link}>
           <FontAwesomeIcon color="black" icon={faArrowRight} />
         </a>
-      </HStack>
+      </HStack> */}
     </VStack>
   );
 };

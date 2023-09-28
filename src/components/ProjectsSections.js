@@ -51,46 +51,47 @@ const projects = [
   {
     title: 'MirrorFashion',
     description:
-      'Developed a sleek, user-friendly GUI for a fashion-focused e-commerce store utilizing foundational web technologies such as HTML and CSS to ensure optimum functionality and user experience, aiming at providing a streamlined shopping experience.',
+      'Developed a sleek, user-friendly GUI for a fashion-focused e-commerce store utilizing foundational web technologies such as HTML and CSS to ensure optimum functionality and user experience.',
     getImageSrc: () => require('../assets/onlineClothesStore.jpg'),
     link: 'https://github.com/Manuel-hub-ca/MirrorFashion',
   },
   {
-    title: 'Mybrary ',
+    title: 'Mybrary',
     description:
-      'Engineered a Full Stack MVC Library Book Management Web Application that leveraged HTML, CSS, JavaScript, and the EJS templating engine. Accomplished seamless deployment of the application via Railway, ensuring accessibility and user availability.',
+      'Engineered a Full Stack MVC Library Web App leveraging HTML, CSS, JavaScript, and EJS, with seamless deployment via Railway, ensuring user availability and accessibility.',
     getImageSrc: () => require('../assets/book.jpg'),
     link: 'https://github.com/Manuel-hub-ca/Mybrary',
   },
   {
     title: 'API-JWT',
     description:
-      'Conceived a proficient Nestjs API focusing predominantly on user authentication and login using JWT. Utilized TypeScript to manage tasks with CRUD operations, emphasizing establishing a coherent and responsive user-task relationship, emphasizing secure, user-friendly experiences.',
+      'Developed a proficient Nestjs API focusing on user authentication using JWT and TypeScript, emphasizing secure and responsive user-task relationships.',
     getImageSrc: () => require('../assets/apiTask.jpg'),
     link: 'https://github.com/Manuel-hub-ca/nestjs-task-management',
   },
   {
     title: 'API-JWT-2',
     description:
-      'Crafted a purpose-oriented authentication API in Visual Studio Code using the Nestjs framework and the TypeScript programming language. Employed the modern ORM tool Prisma to enhance data management. Implemented robust JWT-based authentication for heightened security. The project showcases my adeptness in building modern, secure APIs for seamless user interaction.',
+      'Crafted a secure, user-friendly authentication API using Nestjs, TypeScript, and Prisma, showcasing adeptness in building modern, purpose-oriented APIs.',
     getImageSrc: () => require('../assets/authImg.jpg'),
     link: 'https://github.com/Manuel-hub-ca/nestjs-jwt',
   },
   {
     title: 'Book API',
     description:
-      'Orchestrated an advanced Book Management API, leveraging the power and flexibility of the Golang programming language. Integrated sophisticated database operations using Postgres to optimize data management, retrieval efficiency, and overall system responsiveness.',
+      'Orchestrated an advanced Book Management API using Golang and integrated with Postgres for optimized data management and retrieval efficiency.',
     getImageSrc: () => require('../assets/book2.jpg'),
-    link: 'https://github.com/Manuel-hub- ca/SimpleProGoCRUDRESTAPInoframework',
+    link: 'https://github.com/Manuel-hub-ca/SimpleProGoCRUDRESTAPInoframework',
   },
   {
     title: 'Portfolio',
     description:
-      'Constructed a dynamic, visually appealing portfolio using React, focusing on showcasing proficiency in modern libraries like Chakra UI. Emphasized responsive design and user interaction to provide an insightful overview of professional accomplishments and skills.',
+      'Constructed a visually appealing, dynamic portfolio using React and Chakra UI, emphasizing responsive design and user interaction.',
     getImageSrc: () => require('../assets/porfolio.jpg'),
     link: 'https://github.com/Manuel-hub-ca/Portfolio.git',
   },
 ];
+
 
 const ProjectsSection = () => {
   return (

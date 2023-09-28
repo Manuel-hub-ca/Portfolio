@@ -67,7 +67,7 @@ const Header = () => {
         fontSize={['10px', 'md', 'lg']}
       >
         <nav>
-          <HStack spacing={[1,2,3,5]} bgColor={'red'}>
+          <HStack spacing={[3,4,5,5]} bgColor={'red'}>
             {socials.map((s, i) => (
               <a key={i} href={s.url} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={s.icon} size={iconSize} fontSize={iconSize} className="socials" />

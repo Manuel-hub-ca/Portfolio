@@ -9,15 +9,16 @@ const Card = ({ title, description, imageSrc, link }) => {
       borderRadius={'8px'}
       spacing={4}
       alignItems={'start'}
-      paddingBottom={'20px'}
+      paddingBottom={['5px', '10px', '10px', '20px']}
     >
-      <Image src={imageSrc} borderRadius={'8px'} objectFit={'cover'}/>
-      <VStack height={'110px'}>
+      <Image src={imageSrc} borderRadius={'8px'} objectFit={'cover'} marginBottom={'-12px'}/>
+      <VStack height={'110px'} marginTop={'1px'}>
         <Heading
+          marginTop={'0'}
           marginLeft={mL}
           color={'black'}
           textAlign={'left'}
-          height={['17px', '17px', '20px', '20px']}
+          height={['10px', '17px', '20px', '20px']}
           fontSize={['12px', '25px', '30px', '30px']}
           marginBottom={'6px'}
         >

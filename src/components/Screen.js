@@ -7,7 +7,7 @@ export const Screen = ({ children, ...boxProps }) => {
       // color={isDarkBackground ? 'white' : 'black'}
       {...boxProps}
     >
-      <VStack width={'1280px'} minHeight={'100vh'} {...boxProps}>
+      <VStack minWidth={'100vw'} minHeight={'100vh'} {...boxProps}>
         {children}
       </VStack>
     </VStack>

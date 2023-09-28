@@ -102,7 +102,7 @@ const ProjectsSection = () => {
       spacing={8}
     >
       <h2 id="projects" className="h2">
-        Projects{' '}
+        Projects
       </h2>
 
       <Box

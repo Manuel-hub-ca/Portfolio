@@ -9,6 +9,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { Box, HStack } from '@chakra-ui/react';
 import { Link as ScrollLink } from 'react-scroll';
+import { useBreakpointValue } from "@chakra-ui/react";
 import { Link } from 'react-router-dom';
 export const socials = [
   {
@@ -43,6 +44,8 @@ const Header = () => {
       });
     }
   };
+  const iconSize = useBreakpointValue({ base: "16px", md: "28px", lg: "32px" });
+  const justifyContent = useBreakpointValue({ base: 'space-between', md: 'space-around', lg: 'space-around' });
   // bgGradient={'linear(to-r, green.200, pink.500, black)'}
   return (
     <Box
@@ -56,15 +59,17 @@ const Header = () => {
       <HStack
         width={'100%'}
         height={'100%'}
-        justifyContent="space-around"
+        justifyContent={justifyContent}
         alignItems={'center'}
         color={'cyan'}
+        // backgroundColor={'red'}
+        fontSize={['sm', 'md', 'lg']}
       >
         <nav>
           <HStack spacing={5}>
             {socials.map((s, i) => (
               <a key={i} href={s.url} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={s.icon} size="2x" className="socials" />
+                <FontAwesomeIcon icon={s.icon} fontSize={iconSize} className="socials" />
               </a>
             ))}
           </HStack>

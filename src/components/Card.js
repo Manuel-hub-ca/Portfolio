@@ -11,7 +11,7 @@ const Card = ({ title, description, imageSrc, link }) => {
       alignItems={'start'}
       paddingBottom={'20px'}
     >
-      <Image src={imageSrc} borderRadius={'8px'} />
+      <Image src={imageSrc} borderRadius={'8px'} objectFit={'cover'}/>
       <VStack height={'110px'}>
         <Heading
           marginLeft={mL}

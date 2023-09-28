@@ -44,7 +44,7 @@ const Header = () => {
       });
     }
   };
-  const iconSize = useBreakpointValue({ base: "20px", md: "28px", lg: "32px" });
+  const iconSize = useBreakpointValue({ base: "16px", md: "28px", lg: "32px" });
   // bgGradient={'linear(to-r, green.200, pink.500, black)'}
   return (
     <Box

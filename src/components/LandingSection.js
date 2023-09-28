@@ -17,7 +17,7 @@ const LandingSection = () => {
         <Image src={logo} alt="logo" width={'200px'} height={'200px'} />
       </HStack>
       <VStack width={'100%'}>
-        <Heading fontSize={'80px'}>Portfolio</Heading>
+        <Heading fontSize={['70px','70px','80px','80px']}>Portfolio</Heading>
       </VStack>
     </Screen>
   );

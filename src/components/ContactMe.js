@@ -65,8 +65,6 @@ const ContactMe = () => {
       background={`url(${bgImg5})`}
       backgroundRepeat={'no-repeat'}
       backgroundSize={'cover'}
-      // py={16}
-      // spacing={8}
     >
       <VStack
         w="100%"
@@ -78,7 +76,7 @@ const ContactMe = () => {
           Contact me
         </Heading>
 
-        <Box p={6} rounded="md" w="100%" mx={'auto'} bgColor={'red'}>
+        <Box p={6} rounded="md" w="100%" mx={'auto'}>
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4} position={'relative'}>
               <FormControl

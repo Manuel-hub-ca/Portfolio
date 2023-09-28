@@ -76,7 +76,7 @@ const Header = () => {
         </nav>
 
         <nav>
-          <HStack spacing={[3,4,5,6] } fontSize={['12px', '15px', '20px', '20px']}>
+          <HStack spacing={[3,4,5,6] } >
             <ScrollLink
               href=""
               onClick={() => HandleClick('home')}

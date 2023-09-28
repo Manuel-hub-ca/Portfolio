@@ -64,7 +64,7 @@ const Header = () => {
         alignItems={'center'}
         color={'cyan'}
         // backgroundColor={'red'}
-        fontSize={['10px', 'md', 'lg']}
+        fontSize={['20px', 'md', 'lg']}
       >
         <nav>
           <HStack spacing={[5,4,5,5]} bgColor={'red'}>

@@ -44,8 +44,7 @@ const Header = () => {
       });
     }
   };
-  const iconSize = useBreakpointValue({ base: "16px", md: "28px", lg: "32px" });
-  const justifyContent = useBreakpointValue({ base: 'space-between', md: 'space-around', lg: 'space-around' });
+  const iconSize = useBreakpointValue({ base: "20px", md: "28px", lg: "32px" });
   // bgGradient={'linear(to-r, green.200, pink.500, black)'}
   return (
     <Box
@@ -64,7 +63,7 @@ const Header = () => {
         alignItems={'center'}
         color={'cyan'}
         // backgroundColor={'red'}
-        fontSize={['20px', 'md', 'lg']}
+        fontSize={['10px', 'md', 'lg']}
       >
         <nav>
           <HStack spacing={[5,4,5,5]} bgColor={'red'}>

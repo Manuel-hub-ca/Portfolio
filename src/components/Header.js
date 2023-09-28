@@ -46,10 +46,11 @@ const Header = () => {
   // bgGradient={'linear(to-r, green.200, pink.500, black)'}
   return (
     <Box
-      width={'100%'}
+      width={['100vw', '100vw', '100vw', '100vw']}
       height={'50px'}
       position={'fixed'}
       top={'0'}
+      // backgroundColor={'red'}
       backgroundColor={'rgba(0, 0, 0, 0.5)'}
     >
       <HStack

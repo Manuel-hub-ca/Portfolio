@@ -17,7 +17,7 @@ const Card = ({ title, description, imageSrc, link }) => {
         color={'black'}
         textAlign={'left'}
         height={'30px'}
-        fontSize={['25px','25px','30px','30px']}
+        fontSize={['20px','25px','30px','30px']}
       >
         {title}
       </Heading>

@@ -3,11 +3,55 @@ import bgImg3 from '../assets/bgImg3.jpeg';
 import { Box } from '@chakra-ui/react';
 import Card from './Card';
 
+// const projects = [
+//   {
+//     title: 'MirrorFashion',
+//     description:
+//       'Developed an elegant GUI for a clothing store application using pure HTML and CSS.',
+//     getImageSrc: () => require('../assets/onlineClothesStore.jpg'),
+//     link: 'https://github.com/Manuel-hub-ca/MirrorFashion',
+//   },
+//   {
+//     title: 'Mybrary ',
+//     description:
+//       'Engineered a Full Stack MVC Library Book Management Web Application that leveraged HTML, CSS, JavaScript, and the EJS templating engine. Accomplished seamless deployment of the application via Railway, ensuring accessibility and user availability.',
+//     getImageSrc: () => require('../assets/book.jpg'),
+//     link: 'https://github.com/Manuel-hub-ca/Mybrary',
+//   },
+//   {
+//     title: 'Task-Management',
+//     description:
+//       'Developed a robust Nestjs API project with a primary focus on user authentication and login using JWT. The API leverages TypeScript and smoothy manages CRUD operations for tasks , establishing a clear user-task relationship.',
+//     getImageSrc: () => require('../assets/apiTask.jpg'),
+//     link: 'https://github.com/Manuel-hub-ca/nestjs-task-management',
+//   },
+//   {
+//     title: 'JWT Authentication',
+//     description:
+//       'Crafted a purpose-oriented authentication API in Visual Studio Code using the Nestjs framework and the TypeScript programming language. Employed the modern ORM tool Prisma to enhance data management. Implemented robust JWT-based authentication for heightened security. The project showcases my adeptness in building modern, secure APIs for seamless user interaction.',
+//     getImageSrc: () => require('../assets/authImg.jpg'),
+//     link: 'https://github.com/Manuel-hub-ca/nestjs-jwt',
+//   },
+//   {
+//     title: 'Book Management',
+//     description:
+//       'Developed an API application for a Book Management System, harnessing the power of pure Golang programming language. Smoothly integrated data base opertaions using Postgres, enhancing data management and retrieval efficiency.',
+//     getImageSrc: () => require('../assets/book2.jpg'),
+//     link: 'https://github.com/Manuel-hub- ca/SimpleProGoCRUDRESTAPInoframework',
+//   },
+//   {
+//     title: 'Portfolio',
+//     description:
+//       'React frontend porfolio using modern libraries such as chakra',
+//     getImageSrc: () => require('../assets/porfolio.jpg'),
+//     link: 'https://github.com/Manuel-hub-ca/Portfolio.git',
+//   },
+// ];
 const projects = [
   {
     title: 'MirrorFashion',
     description:
-      'Developed an elegant GUI for a clothing store application using pure HTML and CSS.',
+      'Developed a sleek, user-friendly GUI for a fashion-focused e-commerce store utilizing foundational web technologies such as HTML and CSS to ensure optimum functionality and user experience, aiming at providing a streamlined shopping experience.',
     getImageSrc: () => require('../assets/onlineClothesStore.jpg'),
     link: 'https://github.com/Manuel-hub-ca/MirrorFashion',
   },
@@ -21,7 +65,7 @@ const projects = [
   {
     title: 'Task-Management',
     description:
-      'Developed a robust Nestjs API project with a primary focus on user authentication and login using JWT. The API leverages TypeScript and smoothy manages CRUD operations for tasks , establishing a clear user-task relationship.',
+      'Conceived a proficient Nestjs API focusing predominantly on user authentication and login using JWT. Utilized TypeScript to manage tasks with CRUD operations, emphasizing establishing a coherent and responsive user-task relationship, emphasizing secure, user-friendly experiences.',
     getImageSrc: () => require('../assets/apiTask.jpg'),
     link: 'https://github.com/Manuel-hub-ca/nestjs-task-management',
   },
@@ -35,18 +79,19 @@ const projects = [
   {
     title: 'Book Management',
     description:
-      'Developed an API application for a Book Management System, harnessing the power of pure Golang programming language. Smoothly integrated data base opertaions using Postgres, enhancing data management and retrieval efficiency.',
+      'Orchestrated an advanced Book Management API, leveraging the power and flexibility of the Golang programming language. Integrated sophisticated database operations using Postgres to optimize data management, retrieval efficiency, and overall system responsiveness.',
     getImageSrc: () => require('../assets/book2.jpg'),
     link: 'https://github.com/Manuel-hub- ca/SimpleProGoCRUDRESTAPInoframework',
   },
   {
     title: 'Portfolio',
     description:
-      'React frontend porfolio using modern libraries such as chakra',
+      'Constructed a dynamic, visually appealing portfolio using React, focusing on showcasing proficiency in modern libraries like Chakra UI. Emphasized responsive design and user interaction to provide an insightful overview of professional accomplishments and skills.',
     getImageSrc: () => require('../assets/porfolio.jpg'),
     link: 'https://github.com/Manuel-hub-ca/Portfolio.git',
   },
 ];
+
 const ProjectsSection = () => {
   return (
     <Screen

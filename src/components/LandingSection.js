@@ -1,16 +1,15 @@
 import { Screen } from './Screen';
-import { HStack, Heading, Image, VStack, useBreakpoint } from '@chakra-ui/react';
+import { HStack, Heading, Image, VStack} from '@chakra-ui/react';
 // import me from '../assets/me.jpg';
 import bgImg from '../assets/bgImg.png';
 import Header from './Header';
 import logo from '../logo.svg';
 const LandingSection = () => {
-  const bgSize = useBreakpoint({base: "contain", sm:"contain", md:"cover"})
   return (
     <Screen
       background={`url(${bgImg})`}
       backgroundRepeat={'no-repeat'}
-      backgroundSize={bgSize}
+      backgroundSize={'cover'}
       id="home"
     >
       <Header />

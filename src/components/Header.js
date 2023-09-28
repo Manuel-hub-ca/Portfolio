@@ -59,6 +59,7 @@ const Header = () => {
       <HStack
         width={'100%'}
         height={'100%'}
+        
         justifyContent={justifyContent}
         alignItems={'center'}
         color={'cyan'}
@@ -66,7 +67,7 @@ const Header = () => {
         fontSize={['10px', 'md', 'lg']}
       >
         <nav>
-          <HStack spacing={5}>
+          <HStack spacing={[1,2,3,5]} bgColor={'red'}>
             {socials.map((s, i) => (
               <a key={i} href={s.url} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={s.icon} size={iconSize} fontSize={iconSize} className="socials" />
@@ -76,7 +77,7 @@ const Header = () => {
         </nav>
 
         <nav>
-          <HStack spacing={6}>
+          <HStack spacing={[3,4,5,6]}>
             <ScrollLink
               href=""
               onClick={() => HandleClick('home')}

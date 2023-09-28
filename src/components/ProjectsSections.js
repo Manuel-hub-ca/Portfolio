@@ -51,21 +51,21 @@ const projects = [
   {
     title: 'MirrorFashion',
     description:
-      'Developed a sleek, user-friendly GUI for a fashion-focused e-commerce store utilizing foundational web technologies such as HTML and CSS to ensure optimum functionality and user experience.',
+      'Designed a sleek e-commerce store UI, utilizing HTML and CSS for optimum functionality and user experience in a fashion-focused environment.',
     getImageSrc: () => require('../assets/onlineClothesStore.jpg'),
     link: 'https://github.com/Manuel-hub-ca/MirrorFashion',
   },
   {
     title: 'Mybrary',
     description:
-      'Engineered a Full Stack MVC Library Web App leveraging HTML, CSS, JavaScript, and EJS, with seamless deployment via Railway, ensuring user availability and accessibility.',
+      'Engineered an MVC Library Web App using HTML, CSS, JavaScript, and EJS, deployed via Railway, ensuring user availability and accessibility.',
     getImageSrc: () => require('../assets/book.jpg'),
     link: 'https://github.com/Manuel-hub-ca/Mybrary',
   },
   {
     title: 'API-JWT',
     description:
-      'Developed a proficient Nestjs API focusing on user authentication using JWT and TypeScript, emphasizing secure and responsive user-task relationships.',
+      'Developed a Nestjs API focusing on user authentication using JWT and TypeScript for secure and responsive user-task relationships.',
     getImageSrc: () => require('../assets/apiTask.jpg'),
     link: 'https://github.com/Manuel-hub-ca/nestjs-task-management',
   },
@@ -79,18 +79,19 @@ const projects = [
   {
     title: 'Book API',
     description:
-      'Orchestrated an advanced Book Management API using Golang and integrated with Postgres for optimized data management and retrieval efficiency.',
+      'Developed an advanced Book Management API using Golang and Postgres, optimizing data management and retrieval efficiency.',
     getImageSrc: () => require('../assets/book2.jpg'),
     link: 'https://github.com/Manuel-hub-ca/SimpleProGoCRUDRESTAPInoframework',
   },
   {
     title: 'Portfolio',
     description:
-      'Constructed a visually appealing, dynamic portfolio using React and Chakra UI, emphasizing responsive design and user interaction.',
+      'Constructed a dynamic portfolio using React and Chakra UI, focusing on responsive design and user interaction.',
     getImageSrc: () => require('../assets/porfolio.jpg'),
     link: 'https://github.com/Manuel-hub-ca/Portfolio.git',
   },
 ];
+
 
 
 const ProjectsSection = () => {

@@ -69,7 +69,7 @@ const ContactMe = () => {
       // spacing={8}
     >
       <VStack
-        w="1024px"
+        w="100%"
         p={32}
         alignItems="flex-start"
         style={{ paddingTop: '200px' }}
@@ -78,7 +78,7 @@ const ContactMe = () => {
           Contact me
         </Heading>
 
-        <Box p={6} rounded="md" w="100%">
+        <Box p={6} rounded="md" w="100%" mx={'auto'} bgColor={'red'}>
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4} position={'relative'}>
               <FormControl
@@ -155,7 +155,7 @@ const ContactMe = () => {
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
 
-              <Button type="submit" colorScheme="cyan" width="full">
+              <Button type="submit" colorScheme="cyan" width="80vw">
                 {isLoading ? 'Submitting...' : 'Submit'}
               </Button>
             </VStack>

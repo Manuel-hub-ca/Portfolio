@@ -63,13 +63,13 @@ const Header = () => {
         alignItems={'center'}
         color={'cyan'}
         // backgroundColor={'red'}
-        fontSize={['sm', 'md', 'lg']}
+        fontSize={['10px', 'md', 'lg']}
       >
         <nav>
           <HStack spacing={5}>
             {socials.map((s, i) => (
               <a key={i} href={s.url} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={s.icon} fontSize={iconSize} className="socials" />
+                <FontAwesomeIcon icon={s.icon} size={iconSize} fontSize={iconSize} className="socials" />
               </a>
             ))}
           </HStack>

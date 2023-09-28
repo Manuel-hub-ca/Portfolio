@@ -38,12 +38,12 @@ const Card = ({ title, description, imageSrc, link }) => {
         </Text>
       </VStack>
 
-      {/* <HStack marginLeft={mL} alignItems={'center'}>
+      <HStack marginLeft={mL} alignItems={'center'} fontSize={['8px','13px','15px']}>
         <span style={{ color: 'black' }}>GitHub Repo</span>
         <a href={link}>
           <FontAwesomeIcon color="black" icon={faArrowRight} />
         </a>
-      </HStack> */}
+      </HStack>
     </VStack>
   );
 };

@@ -10,7 +10,6 @@ import {
 import { Box, HStack } from '@chakra-ui/react';
 import { Link as ScrollLink } from 'react-scroll';
 import { useBreakpointValue } from "@chakra-ui/react";
-import { Link } from 'react-router-dom';
 export const socials = [
   {
     icon: faEnvelope,
@@ -76,7 +75,7 @@ const Header = () => {
         </nav>
 
         <nav>
-          <HStack spacing={[3,4,5,6] } >
+          <HStack spacing={[3,4,5,6] } fontSize={['10px', '15px', '20px', '20px']}>
             <ScrollLink
               href=""
               onClick={() => HandleClick('home')}

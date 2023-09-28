@@ -1,5 +1,5 @@
 import { Screen } from './Screen';
-import { HStack, Heading, Image, VStack} from '@chakra-ui/react';
+import { HStack, Heading, Image, VStack } from '@chakra-ui/react';
 // import me from '../assets/me.jpg';
 import bgImg from '../assets/bgImg.png';
 import Header from './Header';
@@ -17,7 +17,7 @@ const LandingSection = () => {
         <Image src={logo} alt="logo" width={'200px'} height={'200px'} />
       </HStack>
       <VStack width={'100%'}>
-        <Heading fontSize={['70px','70px','80px','80px']}>Portfolio</Heading>
+        <Heading fontSize={['60px', '70px', '80px', '80px']}>Portfolio</Heading>
       </VStack>
     </Screen>
   );

@@ -63,21 +63,21 @@ const projects = [
     link: 'https://github.com/Manuel-hub-ca/Mybrary',
   },
   {
-    title: 'Task-Management',
+    title: 'API-JWT',
     description:
       'Conceived a proficient Nestjs API focusing predominantly on user authentication and login using JWT. Utilized TypeScript to manage tasks with CRUD operations, emphasizing establishing a coherent and responsive user-task relationship, emphasizing secure, user-friendly experiences.',
     getImageSrc: () => require('../assets/apiTask.jpg'),
     link: 'https://github.com/Manuel-hub-ca/nestjs-task-management',
   },
   {
-    title: 'JWT Authentication',
+    title: 'API-JWT-2',
     description:
       'Crafted a purpose-oriented authentication API in Visual Studio Code using the Nestjs framework and the TypeScript programming language. Employed the modern ORM tool Prisma to enhance data management. Implemented robust JWT-based authentication for heightened security. The project showcases my adeptness in building modern, secure APIs for seamless user interaction.',
     getImageSrc: () => require('../assets/authImg.jpg'),
     link: 'https://github.com/Manuel-hub-ca/nestjs-jwt',
   },
   {
-    title: 'Book Management',
+    title: 'Book API',
     description:
       'Orchestrated an advanced Book Management API, leveraging the power and flexibility of the Golang programming language. Integrated sophisticated database operations using Postgres to optimize data management, retrieval efficiency, and overall system responsiveness.',
     getImageSrc: () => require('../assets/book2.jpg'),

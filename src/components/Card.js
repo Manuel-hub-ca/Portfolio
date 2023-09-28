@@ -16,12 +16,12 @@ const Card = ({ title, description, imageSrc, link }) => {
         marginLeft={mL}
         color={'black'}
         textAlign={'left'}
-        height={'30px'}
+        height={['17px','17px','20px','20px']}
         fontSize={['12px','25px','30px','30px']}
       >
         {title}
       </Heading>
-      <Text marginLeft={mL} color={'gray'} fontSize={['12px','25px','30px','12px']}>
+      <Text marginLeft={mL} color={'gray'} fontSize={['10px','11px','12px','12px']}>
         {description}
       </Text>
       <HStack marginLeft={mL} alignItems={'center'}>

@@ -35,10 +35,16 @@ const Card = ({ title, description, imageSrc, link }) => {
           fontSize={['10px', '11px', '12px', '12px']}
         >
           {description}
-        </Text>
+        </Text> 
       </VStack>
-
-      <HStack marginLeft={mL} alignItems={'center'} fontSize={['8px','13px','15px']}>
+      <HStack
+        marginLeft={mL}
+        // justifyContent={'start'}
+        // alignItems={'center'}
+        fontSize={['7px', '13px', '10px']}
+        paddingTop={'0'}
+        marginTop={'-10px'}
+      >
         <span style={{ color: 'black' }}>GitHub Repo</span>
         <a href={link}>
           <FontAwesomeIcon color="black" icon={faArrowRight} />

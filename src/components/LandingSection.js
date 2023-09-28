@@ -18,8 +18,6 @@ const LandingSection = () => {
       </HStack>
       <VStack width={'100%'}>
         <Heading fontSize={'80px'}>Portfolio</Heading>
-        {/* <img src={me} alt="me" /> */}
-        {/* <Avatar src={me} size={'2xl'} background={'rgba(0, 0, 0, 0.3)'} /> */}
       </VStack>
     </Screen>
   );

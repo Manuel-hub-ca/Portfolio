@@ -60,7 +60,7 @@ const Header = () => {
         width={'100%'}
         height={'100%'}
         
-        justifyContent={justifyContent}
+        justifyContent={'space-around'}
         alignItems={'center'}
         color={'cyan'}
         // backgroundColor={'red'}

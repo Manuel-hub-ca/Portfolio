@@ -155,7 +155,7 @@ const ContactMe = () => {
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
               
-              <Button type="submit" colorScheme="cyan" width={['38','57','57vw']}>
+              <Button type="submit" colorScheme="cyan" width={['25vw','57vw','57vw']}>
                 {isLoading ? 'Submitting...' : 'Submit'}
               </Button>
             </VStack>

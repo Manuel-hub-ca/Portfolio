@@ -70,17 +70,21 @@ const ContactMe = () => {
       <VStack
         w="100vw"
         h={'850px'}
-        p={32}
-        // alignItems="flex-start"
         style={{ paddingTop: '200px' }}
         mx={'auto'}
         // bgColor={'red'}
       >
-        <Box p={6} rounded="md" mt={'-140px'} width={['80vw','60vw','60vw']}>
+        <Box
+          p={6}
+          rounded="md"
+          mt={'-140px'}
+          width={['80vw', '60vw', '60vw']}
+          bgColor={'red'}
+        >
           <Heading as="h1" id="contact-me" color={'white'}>
             Contact me
           </Heading>
-          <form onSubmit={formik.handleSubmit} style={{marginTop:'45px'}}>
+          <form onSubmit={formik.handleSubmit} style={{ marginTop: '45px' }}>
             <VStack spacing={4} position={'relative'}>
               <FormControl
                 isInvalid={
@@ -155,8 +159,12 @@ const ContactMe = () => {
 
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-              
-              <Button type="submit" colorScheme="cyan" width={['25vw','57vw','57vw']}>
+
+              <Button
+                type="submit"
+                colorScheme="cyan"
+                width={['25vw', '57vw', '57vw']}
+              >
                 {isLoading ? 'Submitting...' : 'Submit'}
               </Button>
             </VStack>

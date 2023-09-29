@@ -5,10 +5,9 @@ import LandingSection from './components/LandingSection';
 import ProjectsSection from './components/ProjectsSections';
 import Skills from './components/Skills';
 import ContactMe from './components/ContactMe';
-import Footer from './components/Footer';
 import { AlertProvider } from './context/alertContext';
 import Alert from './components/Alert';
-
+import Footer from './components/Footer';
 function App() {
   return (
     <ChakraProvider>

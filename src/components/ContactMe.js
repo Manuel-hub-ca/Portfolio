@@ -17,6 +17,7 @@ import {
 import * as Yup from 'yup';
 import useSubmit from '../hooks/useSubmit';
 import { useAlertContext } from '../context/alertContext';
+import { Link } from '@chakra-ui/react';
 
 const ContactMe = () => {
   const { isLoading, response, submit } = useSubmit();
@@ -74,11 +75,11 @@ const ContactMe = () => {
         style={{ paddingTop: '200px' }}
         // bgColor={'red'}
       >
-        <Box p={6} rounded="md" mx={'auto'} mt={'-140px'}>
+        <Box p={6} rounded="md" mx={'auto'} mt={'-140px'} width={['80vw','60vw','60vw']}>
           <Heading as="h1" id="contact-me" color={'white'}>
             Contact me
           </Heading>
-          <form onSubmit={formik.handleSubmit}>
+          <form onSubmit={formik.handleSubmit} style={{marginTop:'45px'}}>
             <VStack spacing={4} position={'relative'}>
               <FormControl
                 isInvalid={
@@ -153,8 +154,8 @@ const ContactMe = () => {
 
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-
-              <Button type="submit" colorScheme="cyan" width="80vw">
+              
+              <Button type="submit" colorScheme="cyan" width={['38','57','57vw']}>
                 {isLoading ? 'Submitting...' : 'Submit'}
               </Button>
             </VStack>

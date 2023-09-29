@@ -67,20 +67,8 @@ const ContactMe = () => {
       backgroundRepeat={'no-repeat'}
       backgroundSize={'cover'}
     >
-      <VStack
-        w="100vw"
-        h={'850px'}
-        style={{ paddingTop: '200px' }}
-        mx={'auto'}
-        // bgColor={'red'}
-      >
-        <Box
-          p={6}
-          rounded="md"
-          mt={'-140px'}
-          width={['80vw', '60vw', '60vw']}
-          bgColor={'red'}
-        >
+      <VStack w="100vw" h={'850px'} style={{ paddingTop: '200px' }} mx={'auto'}>
+        <Box p={6} rounded="md" mt={'-140px'} width={['80vw', '60vw', '60vw']} bg={'rgba(0, 0,0,0.5)'}>
           <Heading as="h1" id="contact-me" color={'white'}>
             Contact me
           </Heading>

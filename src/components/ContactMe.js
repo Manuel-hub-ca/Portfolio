@@ -71,11 +71,12 @@ const ContactMe = () => {
         w="100vw"
         h={'850px'}
         p={32}
-        alignItems="flex-start"
+        // alignItems="flex-start"
         style={{ paddingTop: '200px' }}
+        mx={'auto'}
         // bgColor={'red'}
       >
-        <Box p={6} rounded="md" mx={'auto'} mt={'-140px'} width={['80vw','60vw','60vw']}>
+        <Box p={6} rounded="md" mt={'-140px'} width={['80vw','60vw','60vw']}>
           <Heading as="h1" id="contact-me" color={'white'}>
             Contact me
           </Heading>

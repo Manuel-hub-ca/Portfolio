@@ -66,7 +66,6 @@ const ContactMe = () => {
       backgroundRepeat={'no-repeat'}
       backgroundSize={'cover'}
     >
-
       <VStack
         w="100vw"
         h={'850px'}
@@ -76,10 +75,10 @@ const ContactMe = () => {
         // bgColor={'red'}
       >
         <Box p={6} rounded="md" mx={'auto'} mt={'-140px'}>
-        <Heading as="h1" id="contact-me" color={'white'}>
-        Contact me
-      </Heading>
-          <form onSubmit={formik.handleSubmit} >
+          <Heading as="h1" id="contact-me" color={'white'}>
+            Contact me
+          </Heading>
+          <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4} position={'relative'}>
               <FormControl
                 isInvalid={

@@ -151,7 +151,7 @@ const ContactMe = () => {
               <Button
                 type="submit"
                 colorScheme="cyan"
-                width={['25vw', '57vw', '57vw']}
+                width={['90%', '57vw', '57vw']}
               >
                 {isLoading ? 'Submitting...' : 'Submit'}
               </Button>

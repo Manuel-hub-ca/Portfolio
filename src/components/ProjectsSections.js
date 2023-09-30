@@ -1,6 +1,6 @@
 import { Screen } from './Screen';
 import bgImg3 from '../assets/bgImg3.jpeg';
-import { Box } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
 import Card from './Card';
 
 // const projects = [
@@ -103,9 +103,7 @@ const ProjectsSection = () => {
       alignItems="center"
       spacing={8}
     >
-      <h2 id="projects" className="h2">
-        Projects
-      </h2>
+      <Heading as={'h2'} ml={'100px'} mt={'20px'} id='projects'>Projects</Heading>
 
       <Box
         display={'grid'}

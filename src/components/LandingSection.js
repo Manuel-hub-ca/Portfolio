@@ -9,8 +9,9 @@ const LandingSection = () => {
     <Screen
       background={`url(${bgImg})`}
       backgroundRepeat={'no-repeat'}
-      backgroundSize={['100% 90vh', 'cover']}
+      backgroundSize={['100% 87vh', '100%']}
       backgroundPosition={['top', 'center']}
+      bgColor={'rgba(0,0,0,1)'}
       id="home"
     >
       <Header />

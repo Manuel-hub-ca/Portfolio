@@ -7,11 +7,11 @@ import logo from '../logo.svg';
 const LandingSection = () => {
   return (
     <Screen
-    background={`url(${bgImg})`}
-    backgroundRepeat={'no-repeat'}
-    backgroundSize={['100% auto', 'cover']}
-    backgroundPosition={['top', 'center']}
-    id="home"
+      background={`url(${bgImg})`}
+      backgroundRepeat={'no-repeat'}
+      backgroundSize={['100% 100%', 'cover']}
+      backgroundPosition={['top', 'center']}
+      id="home"
     >
       <Header />
       <HStack alignSelf={'flex-start'} marginTop={'80px'}>

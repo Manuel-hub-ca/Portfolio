@@ -103,7 +103,7 @@ const ProjectsSection = () => {
       alignItems="center"
       spacing={8}
     >
-      <Heading as={'h2'} ml={['25px', '60px', '80px','100px']} mt={'20px'} id='projects'>Projects</Heading>
+      <Heading as={'h2'} ml={['30px', '60px', '80px','100px']} mt={'20px'} id='projects'>Projects</Heading>
 
       <Box
         display={'grid'}

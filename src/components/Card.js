@@ -13,7 +13,7 @@ const Card = ({ title, description, imageSrc, link }) => {
     >
       <Image
         src={imageSrc}
-        borderRadius={'8px'}
+        borderTopRadius={'8px'}
         objectFit={'cover'}
         marginBottom={'-12px'}
       />

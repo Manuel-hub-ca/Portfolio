@@ -2,7 +2,7 @@ import { Box, Flex } from '@chakra-ui/react';
 
 const Footer = () => {
   return (
-    <Box bgGradient={'linear(to top, cyan, skyblue)'}>
+    <Box bgGradient={'linear(to top, cyan, white)'}>
       <footer>
         <Flex
           margin="0 auto"

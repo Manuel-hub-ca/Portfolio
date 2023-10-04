@@ -4,16 +4,29 @@ export const ColorPointerContext = createContext();
 
 export const MousePositionProvider = ({ children }) => {
   const [mousePosition, setMousePosition] = useState({ x: -10, y: -10 });
+  const [isTouchedDivice, setIsTouchedDevice] = useState(false);
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
+    const handleIsTouchedDivice = (e) => {
+      setIsTouchedDevice(true);
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('touchstart', handleIsTouchedDivice);
+    return () =>
+      window.removeEventListener('touchstart', handleIsTouchedDivice);
+  });
 
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+  useEffect(() => {
+    if (!isTouchedDivice) {
+      const handleMouseMove = (e) => {
+        setMousePosition({ x: e.clientX, y: e.clientY });
+      };
+
+      window.addEventListener('mousemove', handleMouseMove);
+
+      return () => window.removeEventListener('mousemove', handleMouseMove);
+    }
+  }, [isTouchedDivice]);
 
   return (
     <ColorPointerContext.Provider value={mousePosition}>

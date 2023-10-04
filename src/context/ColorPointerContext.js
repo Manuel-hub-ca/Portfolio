@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState } from 'react';
 export const ColorPointerContext = createContext();
 
 export const MousePositionProvider = ({ children }) => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState({ x: -5, y: -5 });
 
   useEffect(() => {
     const handleMouseMove = (e) => {

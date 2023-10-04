@@ -39,7 +39,7 @@ const TypewriterEffect = ({ text }) => {
       marginLeft={'2%'}
       marginTop={'24'}
       color={colorHeading}
-      height={'40px'}
+      height={['30px', '37px', '40px']}
     >
       {displayedText}
     </Heading>

@@ -8,16 +8,21 @@ import ContactMe from './components/ContactMe';
 import { AlertProvider } from './context/alertContext';
 import Alert from './components/Alert';
 import Footer from './components/Footer';
+import { MousePositionProvider } from './context/ColorPointerContext';
+import Cursor from './components/Cursor';
 function App() {
   return (
     <ChakraProvider>
       <AlertProvider>
-        <LandingSection />
-        <ProjectsSection />
-        <Skills />
-        <ContactMe />
-        <Footer />
-        <Alert />
+        <MousePositionProvider>
+          <Cursor />
+          <LandingSection />
+          <ProjectsSection />
+          <Skills />
+          <ContactMe />
+          <Footer />
+          <Alert />
+        </MousePositionProvider>
       </AlertProvider>
     </ChakraProvider>
   );

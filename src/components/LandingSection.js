@@ -16,19 +16,23 @@ const LandingSection = () => {
       id="home"
     >
       <Header />
-      <HStack alignSelf={'flex-start'} marginTop={'80px'}>
-        <Image 
-        src={logo} 
-        alt="logo" 
-        width={['150px','180px','200px']} 
-        height={['150px','180px','200px']}
-        marginTop={'-19'}
-         />
-      </HStack>
       <VStack width={'100%'}>
-        <TypewriterEffect text={'Hello, I am Manuel, a Jr. Full Stack Web Developer. Welcome to my portfolio Web Site '}/>
+        <TypewriterEffect
+          text={
+            'Hello, I am Manuel, a Jr. Full Stack Web Developer. Welcome to my portfolio Web Site '
+          }
+        />
         {/* <Heading fontSize={['60px', '70px', '80px', '80px']}>Portfolio</Heading> */}
       </VStack>
+
+      <HStack alignSelf={'flex-start'} marginTop={'20px'}>
+        <Image
+          src={logo}
+          alt="logo"
+          width={['150px', '180px', '200px']}
+          height={['150px', '180px', '200px']}
+        />
+      </HStack>
     </Screen>
   );
 };

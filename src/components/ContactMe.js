@@ -17,7 +17,6 @@ import {
 import * as Yup from 'yup';
 import useSubmit from '../hooks/useSubmit';
 import { useAlertContext } from '../context/alertContext';
-import { Link } from '@chakra-ui/react';
 
 const ContactMe = () => {
   const { isLoading, response, submit } = useSubmit();

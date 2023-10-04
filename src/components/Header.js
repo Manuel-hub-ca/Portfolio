@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { Box, HStack } from '@chakra-ui/react';
 import { Link as ScrollLink } from 'react-scroll';
-import { useBreakpointValue } from "@chakra-ui/react";
+import { useBreakpointValue } from '@chakra-ui/react';
 export const socials = [
   {
     icon: faEnvelope,
@@ -43,7 +43,7 @@ const Header = () => {
       });
     }
   };
-  const iconSize = useBreakpointValue({ base: "16px", md: "28px", lg: "32px" });
+  const iconSize = useBreakpointValue({ base: 'sm', md: 'l', lg: 'xl' });
   // bgGradient={'linear(to-r, green.200, pink.500, black)'}
   return (
     <Box
@@ -57,27 +57,30 @@ const Header = () => {
       <HStack
         width={'100%'}
         height={'100%'}
-        
         justifyContent={'space-around'}
         alignItems={'center'}
         color={'cyan'}
         // backgroundColor={'red'}
-
       >
         <nav>
-          <HStack spacing={[4,4,5,5]}>
+          <HStack spacing={[4, 4, 5, 5]}>
             {socials.map((s, i) => (
               <a key={i} href={s.url} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={s.icon} size={iconSize} fontSize={iconSize} className="socials" />
+                <FontAwesomeIcon
+                  icon={s.icon}
+                  size={iconSize}
+                  fontSize={iconSize}
+                  className="socials"
+                />
               </a>
             ))}
           </HStack>
         </nav>
 
         <nav>
-          <HStack spacing={[3,4,5,6] } fontSize={['10px', '15px', '20px', '20px']}>
+          <HStack spacing={[3, 4, 5, 6]} fontSize={iconSize}>
             <ScrollLink
-              href=""
+              href="#home"
               onClick={() => HandleClick('home')}
               className="scrollLink"
             >
@@ -85,7 +88,7 @@ const Header = () => {
             </ScrollLink>
 
             <ScrollLink
-              href=""
+              href="#projects"
               onClick={() => HandleClick('projects')}
               className="scrollLink"
             >
@@ -93,7 +96,7 @@ const Header = () => {
             </ScrollLink>
 
             <ScrollLink
-              href=""
+              href="#skills"
               onClick={() => HandleClick('skills')}
               className="scrollLink"
             >
@@ -101,7 +104,7 @@ const Header = () => {
             </ScrollLink>
 
             <ScrollLink
-              href=""
+              href="#contact-me"
               onClick={() => HandleClick('contact-me')}
               className="scrollLink"
             >

@@ -1,27 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Heading } from '@chakra-ui/react';
+
 const TypewriterEffect = ({ text }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [charIndex, setCharIndex] = useState(0);
+  const [colorHeading, setColorHeading] = useState('white')
 
   useEffect(() => {
     const timerId = setInterval(() => {
-      setDisplayedText((prev) => prev + text[charIndex]);
+      setDisplayedText((prevText) => prevText + text[charIndex]);
       setCharIndex((prevIndex) => {
-        const newIndex = prevIndex + 1;
-        if (newIndex === text.length) {
-          // Once we reach the end of the string, clear it and reset index
+        // const newIndex = prevIndex + 1
+        // if (newIndex === text.length) {
+        //   setDisplayedText('');
+        //   return 0;
+        // }
+        prevIndex += 1
+        if (prevIndex === text.length) {
           setDisplayedText('');
           return 0;
         }
-        return newIndex;
+        if(prevIndex > text.length / 2){
+          setColorHeading(() => 'yellow')
+        }else{
+          setColorHeading(() => 'white')
+        }
+        return prevIndex
       });
-    }, 200); // Adjust speed by changing duration (ms)
-
-    return () => clearInterval(timerId); // Cleanup interval on component unmount
+    }, 200);
+    return () => clearInterval(timerId)
   }, [text, charIndex]);
 
-  return <Heading as={'h2'} fontSize={['7px', '9px','11px']} fontWeight={'light'} marginLeft={'2%'} marginTop={'0'}>{displayedText}</Heading>;
+  return <Heading as={'h2'} fontSize={['7px','9px','11px']} fontWeight={'light'} marginLeft={'2%'} marginTop={'0'} color={colorHeading}>{displayedText}</Heading>
 };
 
 export default TypewriterEffect;

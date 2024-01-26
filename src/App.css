@@ -1,6 +1,11 @@
 :root{
   background-color: black;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 .socials {
   &:hover {
     transform: scale(1.2);

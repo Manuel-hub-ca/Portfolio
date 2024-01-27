@@ -1,6 +1,5 @@
 import { Screen } from './Screen';
 import { HStack, Image, VStack } from '@chakra-ui/react';
-// import me from '../assets/me.jpg';
 import bgImg from '../assets/bgImg.png';
 import Header from './Header';
 import logo from '../logo.svg';
@@ -19,10 +18,9 @@ const LandingSection = () => {
       <VStack width={'100%'}>
         <TypewriterEffect
           text={
-            'Hello, I am Manuel, a Jr. Full Stack Web Developer. Welcome to my portfolio Web Site '
+            'Hello, I am Manuel. Welcome to my portfolio.'
           }
         />
-        {/* <Heading fontSize={['60px', '70px', '80px', '80px']}>Portfolio</Heading> */}
       </VStack>
 
       <HStack alignSelf={'flex-start'} marginTop={'20px'}>

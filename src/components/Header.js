@@ -45,8 +45,6 @@ export const socials = [
   },
 ];
 
-// ... (previous imports)
-
 const Header = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const iconSize = useBreakpointValue({ base: 'xl', md: 'l', lg: 'xl' });
@@ -63,7 +61,6 @@ const Header = () => {
         block: 'start',
       });
     }
-    // Close the drawer after clicking a link
     setDrawerOpen(false);
   };
 
@@ -97,7 +94,6 @@ const Header = () => {
           ))}
         </HStack>
 
-        {/* Hamburger Icon */}
         <IconButton
           icon={<FontAwesomeIcon icon={faBars} size={iconSize} />}
           aria-label="Open Menu"
@@ -108,14 +104,13 @@ const Header = () => {
           right={5}
         />  
 
-        {/* Drawer for small screens */}
         <Drawer
           isOpen={isDrawerOpen}
           onClose={handleDrawerToggle}
           placement="right"
         >
           <DrawerOverlay />
-          <DrawerContent fontFamily={'cursive'}>
+          <DrawerContent>
             <DrawerCloseButton />
             <DrawerHeader>Menu</DrawerHeader>
             <DrawerBody bgColor={'cyan.200'}>
@@ -153,7 +148,6 @@ const Header = () => {
           </DrawerContent>
         </Drawer>
 
-        {/* Regular navigation links */}
         <nav>
           <HStack
             spacing={6}

@@ -10,11 +10,6 @@ const TypewriterEffect = ({ text }) => {
     const timerId = setInterval(() => {
       setDisplayedText((prevText) => prevText + text[charIndex]);
       setCharIndex((prevIndex) => {
-        // const newIndex = prevIndex + 1
-        // if (newIndex === text.length) {
-        //   setDisplayedText('');
-        //   return 0;
-        // }
         prevIndex += 1;
         if (prevIndex === text.length) {
           setDisplayedText('');

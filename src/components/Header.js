@@ -25,7 +25,7 @@ import { useBreakpointValue } from '@chakra-ui/react';
 export const socials = [
   {
     icon: faEnvelope,
-    url: 'manuel: manueljuliocasanova@gmail.com',
+    url: 'mailto: manueljuliocasanova@gmail.com',
   },
   {
     icon: faGithub,
@@ -75,12 +75,16 @@ const Header = () => {
       <HStack
         width={'100%'}
         height={'100%'}
-        justifyContent={['flex-start', 'flex-start','flex-start','space-around']}
+        justifyContent={[
+          'flex-start',
+          'flex-start',
+          'flex-start',
+          'space-around',
+        ]}
         alignItems={'center'}
         color={'cyan'}
         pl={5}
       >
-
         <HStack spacing={[4, 4, 5, 5]}>
           {socials.map((s, i) => (
             <a key={i} href={s.url} target="_blank" rel="noopener noreferrer">
@@ -102,7 +106,7 @@ const Header = () => {
           bgColor={'yellow'}
           position={'absolute'}
           right={5}
-        />  
+        />
 
         <Drawer
           isOpen={isDrawerOpen}
@@ -114,7 +118,14 @@ const Header = () => {
             <DrawerCloseButton />
             <DrawerHeader>Menu</DrawerHeader>
             <DrawerBody bgColor={'cyan.200'}>
-              <VStack alignContent={'space-around'} fontSize={'30px'} justifyContent={'space-around'} height={'100%'} spacing={4} textColor={'blackAlpha.800'}>
+              <VStack
+                alignContent={'space-around'}
+                fontSize={'30px'}
+                justifyContent={'space-around'}
+                height={'100%'}
+                spacing={4}
+                textColor={'blackAlpha.800'}
+              >
                 <ScrollLink
                   href="#home"
                   onClick={() => HandleClick('home')}

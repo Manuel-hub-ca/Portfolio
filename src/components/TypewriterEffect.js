@@ -28,8 +28,8 @@ const TypewriterEffect = ({ text }) => {
 
   return (
     <Heading
-      as={'h2'}
-      fontSize={['7px', '9px', '11px']}
+      as={'h1'}
+      fontSize={['7px', '20px', '20px']}
       fontWeight={'light'}
       marginLeft={'2%'}
       marginTop={['16', '24', '24']}

@@ -62,7 +62,6 @@ const ContactMe = () => {
   }, [response]);
   return (
     <Screen
-      background={`url(${bgImg5})`}
       backgroundRepeat={'no-repeat'}
       backgroundSize={'cover'}
     >

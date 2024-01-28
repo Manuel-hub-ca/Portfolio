@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'Mybrary',
     description:
-      'Engineered an MVC Library Web App using HTML, CSS, JavaScript, and EJS, deployed via Railway, ensuring user availability and accessibility.',
+      'Engineered an MVC Library Web App using HTML, CSS, JavaScript, and EJS, deployed via Railway, ensuring availability and accessibility.',
     getImageSrc: () => require('../assets/book.jpg'),
     link: 'https://github.com/Manuel-hub-ca/Mybrary',
   },
@@ -53,9 +53,6 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <Screen
-      background={`url(${bgImg3})`}
-      backgroundRepeat={'no-repeat'}
-      backgroundSize={'cover'}
       alignItems="center"
       spacing={8}
     >

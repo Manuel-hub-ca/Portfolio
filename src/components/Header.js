@@ -92,7 +92,7 @@ const Header = () => {
                 icon={s.icon}
                 size={iconSize}
                 fontSize={iconSize}
-                className="socials"
+                className="socials-sections"
               />
             </a>
           ))}

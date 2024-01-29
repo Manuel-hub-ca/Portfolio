@@ -7,13 +7,16 @@ body {
   background-color: cadetblue;
 }
 
+.me{
+  border-radius: 50%;
+}
 .card{
   &:hover{
     transform: scale(1.03);
     transition: transform 0.8s ease-in-out;
   }
 }
-.socials {
+.socials-sections {
   &:hover {
     transform: scale(1.2);
     transition: transform 0.5s ease-in-out;
@@ -30,6 +33,8 @@ h2 {
 
 .scrollLink {
   &:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
     color: white;
   }
 }
@@ -40,15 +45,13 @@ input {
 .formLabel {
   color: white;
 }
-/* Example CSS Styles */
+
 .custom-carousel {
   width: 95vw;
   height: 400px;
   margin: 0 auto;
   background-color: transparent;
-  /* background-color: rgba(0, 0, 0, 0.2); */
   border-radius: 15px;
-  /* padding-left: 30px; */
 }
 
 .custom-slide {
